@@ -72,29 +72,38 @@ header{
     color: var(--linen);
 }
 
+header img{
+    width: 300px;
+}
+
+header p{
+    font-size: 1em;
+    font-style: italic;
+    padding: 2em;
+}
+
 main{
+    display: block;
     max-width: 90vw;
     margin: 0 auto;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 4em;
     font-weight: bold;
 }
 
 p{
-    font-size: .7rem;
+    font-size: 1em;
 }
 
-header p{
-    padding: 1.5rem;
-}
+
 
 nav{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     background-color: var(--champagne-gold);
-    padding: 1rem;
+    padding: 1em;
 }
 
 nav a{
@@ -107,24 +116,24 @@ nav li{
 }
 
 h2{
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.5em;
+    padding: 1em;
 }
 
 h3{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
 #about{
-    padding: 1rem;
-    padding-top: 5rem;
+    padding: 1em;
+    padding-top: 5em;
     margin: 0 auto;
     border-bottom: solid 2px var(--champagne-gold);
 }
 
 #about p{
-    padding: 1rem;
+    padding: 1em;
     line-height: 15px;
 }
 
@@ -140,20 +149,21 @@ h3{
 div{
     background-color: var(--olive-green);
     border-radius: 15px;
-    padding: 1.5rem;
-    margin: 1rem;
-    font-size: .7rem;
+    padding: 1.5em;
+    margin: 1em;
+    font-size: 1em;
     box-shadow: 3px 3px 3px;
 }
 
 div h3{
-    padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-top: 1em;
+    padding-bottom: .5em;
 }
 
 div p{
+    font-size: 1em;
     line-height: 15px;
-    padding: .5rem;
+    padding: .5em;
 }
 
 #gallery{
@@ -162,13 +172,13 @@ div p{
 }
 
 #gallery p{
-    padding: 1.5rem;
+    padding: 1.5em;
 }
 
 #gallery section{
     box-shadow: 3px 3px 10px;
     border-radius: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 #gallery img{
@@ -180,8 +190,8 @@ div p{
     text-align: center;
     font-weight: lighter;
     font-style: italic;
-    font-size: .8rem;
-    padding: 1rem;
+    font-size: .8em;
+    padding: 1em;
 }
 
 #gallery a{
@@ -190,13 +200,13 @@ div p{
     width: 85vw;
     position: relative;
     left: -30px;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     color: var(--linen);
     background-color: var(--olive-green);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 2em;
 }
 
 footer{
@@ -206,13 +216,13 @@ footer{
 
 address{
     color: var(--linen);
-    padding: 1rem;
+    padding: 1em;
 }
 
 footer a{
     text-decoration: none;
     color: var(--champagne-gold);
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 
@@ -223,8 +233,22 @@ footer a{
         display: grid;
         grid-template-columns: auto auto;
     }
-
-
+    #gallery{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    #grid-item-2, #grid-item-3{
+        grid-row: 2 / 3;
+    }
+    #grid-item-4{
+        grid-row: 4/ 5;
+        grid-column: 1 / 3;
+    }
+    /* #gallery{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: auto auto;
+    }*/
 }
 
 /* MEDIA QUERY (large) */
@@ -236,7 +260,7 @@ footer a{
 @media screen and (min-width: 1200px){
     #about{
     max-width: 60vw;
-    padding: 1rem;
+    padding: 1em;
     margin: 0 auto;
     border-bottom: solid 2px var(--champagne-gold);
     }
