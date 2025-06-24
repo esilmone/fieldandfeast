@@ -72,9 +72,18 @@ header{
     color: var(--linen);
 }
 
+main{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
 h1{
     font-size: 3rem;
     font-weight: bold;
+}
+
+p{
+    font-size: .7rem;
 }
 
 header p{
@@ -83,9 +92,14 @@ header p{
 
 nav{
     text-align: center;
+    font-size: 2rem;
     background-color: var(--champagne-gold);
-    color: var(--midnight-blue);
     padding: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--midnight-blue);
 }
 
 nav li{
@@ -94,6 +108,7 @@ nav li{
 
 h2{
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
 h3{
@@ -101,9 +116,38 @@ h3{
     font-weight: bold;
 }
 
+#about{
+    padding: 1rem;
+    padding-top: 5rem;
+    margin: 0 auto;
+    border-bottom: solid 2px var(--champagne-gold);
+}
+
+#about p{
+    padding: 1rem;
+    line-height: 15px;
+}
 
 /* MEDIA QUERY (medium) */
+@media screen and (min-width: 600px){
+
+}
 
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 900px){
+
+}
 
 /* MEDIA QUERY (xl) */
+@media screen and (min-width: 1200px){
+    #about{
+    max-width: 60vw;
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: solid 2px var(--champagne-gold);
+    }
+
+    #about p{
+        line-height: 20px;
+    }
+}
