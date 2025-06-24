@@ -103,12 +103,16 @@ nav{
     text-align: center;
     font-size: 2em;
     background-color: var(--champagne-gold);
-    padding: 1em;
+    padding: .5em;
 }
 
 nav a{
     text-decoration: none;
     color: var(--midnight-blue);
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 nav li{
@@ -181,10 +185,10 @@ div p{
     margin-bottom: 1em;
 }
 
-#gallery img{
+/* #gallery img{
     width: 90vw;
     border-radius: 15px;
-}
+} */
 
 #gallery h3{
     text-align: center;
@@ -207,6 +211,11 @@ div p{
     background-color: var(--olive-green);
     border-radius: 15px;
     padding: 2em;
+}
+
+#gallery a:hover{
+    background-color: var(--champagne-gold);
+    color: var(--midnight-blue);
 }
 
 footer{
@@ -258,6 +267,9 @@ footer a{
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px){
+    main{
+        max-width: 60vw
+    }
     #about{
     max-width: 60vw;
     padding: 1em;

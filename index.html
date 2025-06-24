@@ -30,7 +30,7 @@
                         <h3>Artisan Provisions</h3>
                         <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
                     </div>
-                    <div id="grid-item-2">
+                    <div id="grid-item-3">
                         <h3>Exclusive Dining Experiences</h3>
                         <p>Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.</p>
                     </div>
@@ -49,14 +49,14 @@
                 <h2>A Gallery of Field & Feast</h2>
                 <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
                     <section class="gallery-img" id="tomatoes">
-                        <img src="imgs/tomatoes-200w.jpg"
-                            sizes="(min-width: 600px) 25vw,
-                                    (min-width: 900px) 50vw,
-                                    100vw"
-                            srcset="imgs/tomatoes-200w.jpg 600w,
-                                    imgs/tomatoes-300w.jpg 900w,
-                                    imgs/tomatoes-600w.jpg 1200w"
-                            alt="image of tomatoes in a field">
+                        <picture>
+                            <source media="(min-width: 600px)"
+                                    srcset="imgs/tomatoes-300w.jpg">
+                            <source media="(min-width: 1200px)"
+                                    srcset="imgs/tomatoes-200w.jpg">
+                            <img src="imgs/tomatoes-600w.jpg"
+                                 alt="tomatoes">
+                        </picture>
                         <h3>Heirloom tomatoes at peak ripeness.</h3>
                     </section>
                     <section class="gallery-img" id="oliveOil">
