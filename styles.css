@@ -180,15 +180,15 @@ div p{
 }
 
 #gallery section{
-    box-shadow: 3px 3px 10px;
+    box-shadow: var(--dark-charcoal) 2px 2px 3px;
     border-radius: 15px;
     margin-bottom: 1em;
 }
 
-/* #gallery img{
+#gallery img{
     width: 90vw;
     border-radius: 15px;
-} */
+}
 
 #gallery h3{
     text-align: center;
