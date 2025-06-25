@@ -63,11 +63,13 @@ table {
     --soft-white: #FAF9F6;
 
     font-family: playfair display;
+    width: 100vw;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
 main{
     display: block;
+    align-content: center;
     max-width: 90vw;
     margin: 0 auto;
 }
@@ -83,7 +85,7 @@ header img{
 }
 
 header p{
-    font-size: .8em;
+    font-size: 1em;
     font-style: italic;
     padding: 1.8em 1em;
 }
@@ -94,7 +96,7 @@ h1{
 }
 
 p{
-    font-size: .5em;
+    font-size: 1em;
 }
 
 nav{
@@ -115,17 +117,22 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav ul{
+    justify-content: space-between;
+}
+
 nav li{
     display: inline-block;
     font-size: 1.3em;
-    padding: .2em 1em;
+    padding: .2em;
 }
 
 h2{
     color: var(--midnight-blue);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 1em .5em 0 0;
+    padding: .5em;
+    padding-left: 0;
 }
 
 h3{
@@ -135,8 +142,8 @@ h3{
 }
 
 #about{
-    padding: .5em;
     margin: 0 auto;
+    padding: .5em;
     border-bottom: solid 2px var(--champagne-gold);
 }
 
@@ -148,6 +155,7 @@ h3{
 }
 
 #offerings{
+    padding-bottom: 1em;
     margin: 0 auto;
     border-bottom: solid 2px var(--champagne-gold);
 }
@@ -181,8 +189,13 @@ div p{
 
 }
 
+gallery h2{
+    padding: 0;
+}
+
 #gallery p{
-    padding: 1em;
+    padding: .5em;
+    padding-bottom: 1em;
 }
 
 #gallery section{
@@ -207,9 +220,8 @@ div p{
 #gallery a{
     display: block;
     text-align: center;
-    width: 70vw;
-    position: relative;
-    left: -30px;
+    justify-self:center;
+    width: 85vw;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -217,6 +229,7 @@ div p{
     background-color: var(--olive-green);
     border-radius: 15px;
     padding: 1em;
+    margin: .5em;
 }
 
 #gallery a:hover{
@@ -259,7 +272,7 @@ footer a{
         max-width: 35vw;
     }
     .gallery-img{
-        margin: .5rem;
+        margin: .5em;
     }
     #gallery{
         max-width: 100vw;
@@ -277,26 +290,36 @@ footer a{
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px){
     main{
-        max-width: 70vw;
+        width: 70vw;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
     }
+    h1{
+        font-size: 4.5em;
+    }
+    header img{
+        width: 30vh;
+    }
+    p{
+        font-size: 1em;
+    }
     #about{
         max-width: 70vw;
-        padding: 1em;
         margin: 0 auto;
         border-bottom: solid 2px var(--champagne-gold);
     }
     #offerings{
+        max-width: 70vw;
         height: 50vh;
     }
     #gallery{
         max-width: 70vw;
         display: grid;
+        justify-content: center;
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto;
-        margin: 0rem;
+        margin: 0 auto;
     }
     #gallery h2{
         grid-row: 1 / 2;
@@ -309,9 +332,11 @@ footer a{
     #gallery img, .gallery-img{
         max-width: 12vw;
     }
+    .gallery-img{
+        margin: 1em;
+    }
     #gallery a{
-        max-width: 60vw;
-        text-align: center;
+        max-width: 70vw;
         grid-row: 4 / 5;
         grid-column: 1 / 6;
     }
