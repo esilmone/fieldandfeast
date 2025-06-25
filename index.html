@@ -49,14 +49,14 @@
                 <h2>A Gallery of Field & Feast</h2>
                 <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
                     <section class="gallery-img" id="tomatoes">
-                        <picture>
-                            <source media="(min-width: 600px)"
-                                    srcset="imgs/tomatoes-300w.jpg">
-                            <source media="(min-width: 1200px)"
-                                    srcset="imgs/tomatoes-200w.jpg">
-                            <img src="imgs/tomatoes-600w.jpg"
-                                 alt="tomatoes">
-                        </picture>
+                        <img src="imgs/tomatoes-200w.jpg"
+                            sizes="(min-width: 600px) 50vw,
+                                    (min-width: 1200px) 15vw.
+                                    90vw"
+                            srcset="imgs/tomatoes-200w.jpg 200w,
+                                    imgs/tomatoes-300w.jpg 300w,
+                                    imgs/tomatoes-600w.jpg 600w"
+                            alt="image of tomatoes in a field">
                         <h3>Heirloom tomatoes at peak ripeness.</h3>
                     </section>
                     <section class="gallery-img" id="oliveOil">
