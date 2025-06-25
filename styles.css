@@ -80,24 +80,24 @@ header{
     color: var(--linen);
 }
 
+p{
+    font-size: 1em;
+}
+
 header img{
     width: 50vw;
 }
 
 header p{
-    font-size: 1em;
     font-style: italic;
     padding: 1.8em 1em;
 }
 
 h1{
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
 }
 
-p{
-    font-size: 1em;
-}
 
 nav{
     text-align: center;
@@ -129,14 +129,14 @@ nav li{
 
 h2{
     color: var(--midnight-blue);
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     padding: .5em;
     padding-left: 0;
 }
 
 h3{
-    font-size: 1.1em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 0;
 }
@@ -164,24 +164,37 @@ h3{
     color: var(--soft-white);
 }
 
+#offerings h3{
+    padding-bottom: .5em;
+}
+
+#offerings p{
+    padding: 0 1em;
+    line-height: 20px;
+}
+
+#offerings ul{
+    list-style: circle var(--linen);
+    padding-left: 2em;
+    line-height: 20px;
+    margin: 0;
+}
+
 div{
     background-color: var(--olive-green);
     border-radius: 15px;
     padding: .5em;
     margin: .5em;
-    font-size: 1em;
     box-shadow: 3px 3px 3px;
 }
 
 div h3{
-    padding-top: 1em;
-    padding-bottom: .5em;
+    padding: .5em;
 }
 
 div p{
-    font-size: .7em;
-    line-height: 15px;
-    padding: .5em;
+    line-height: 20px;
+    padding: 1em .5em;
 }
 
 #gallery{
@@ -213,7 +226,7 @@ gallery h2{
     text-align: center;
     font-weight: lighter;
     font-style: italic;
-    font-size: .8em;
+    font-size: 1em;
     padding: 1em;
 }
 
@@ -263,6 +276,18 @@ footer a{
         justify-content: center;
         align-items: center;
     }
+    h1{
+        font-size: 4.5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.8em;
+    }
+    header img{
+        width: 40vh;
+    }
     #offerings{
         display: grid;
         grid-template-columns: auto auto;
@@ -300,7 +325,7 @@ footer a{
         grid-column: 1 / 3;
     }
     #gallery section{
-        margin: 0 auto;
+        margin: .5em auto;
     }
 }
 
@@ -311,6 +336,9 @@ footer a{
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+    }
+    header img{
+        width: 35vh;
     }
     #gallery{
         max-width: 90vw;
@@ -351,19 +379,12 @@ footer a{
         justify-content: center;
         align-items: center;
     }
-    h1{
-        font-size: 4.5em;
-    }
     header img{
         width: 30vh;
-    }
-    p{
-        font-size: 1em;
     }
     #about{
         max-width: 70vw;
         margin: 0 auto;
-        border-bottom: solid 2px var(--champagne-gold);
     }
     #offerings{
         max-width: 70vw;
