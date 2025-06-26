@@ -289,8 +289,14 @@ footer div{
     background-color: var(--midnight-blue);
     box-shadow: none;
 }
+
 footer a:hover{
     text-decoration: underline;
+}
+
+#visually-hidden{
+    background-color: var(--midnight-blue);
+    box-shadow: none;
 }
 
 /* MEDIA QUERY (medium) */
