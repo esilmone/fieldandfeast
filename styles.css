@@ -98,7 +98,6 @@ h1{
     font-weight: bold;
 }
 
-
 nav{
     font-size: 1em;
     background-color: var(--champagne-gold);
@@ -170,14 +169,19 @@ h3{
 
 #offerings p{
     padding: 0 1em;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 #offerings ul{
-    list-style: circle var(--linen);
-    padding-left: 2em;
-    line-height: 20px;
+    padding-left: 1em;
+    line-height: 25px;
     margin: 0;
+}
+
+#offerings li::before{
+    content: "\2022";
+    color: var(--linen);
+    margin-right: .8em;
 }
 
 div{
@@ -185,7 +189,7 @@ div{
     border-radius: 15px;
     padding: .5em;
     margin: .5em;
-    box-shadow: 3px 3px 3px;
+    box-shadow: 1px 1px 3px;
 }
 
 div h3{
@@ -207,6 +211,7 @@ gallery h2{
 }
 
 #gallery p{
+    line-height: 25px;
     padding: .5em;
     padding-bottom: 1em;
 }
@@ -242,7 +247,7 @@ gallery h2{
     background-color: var(--olive-green);
     border-radius: 15px;
     padding: 1em;
-    margin: .5em;
+    margin: 1em;
 }
 
 #gallery a:hover{
@@ -254,18 +259,38 @@ footer{
     background-color: var(--midnight-blue);
     text-align: center;
     margin-top: 2em;
-    padding: 1em;
+    padding: 2em;
 }
 
 address{
+    margin: 3em;
+    line-height: 25px;
+}
+
+address p{
     color: var(--linen);
-    padding: 1em;
+    padding: .2em;
+}
+
+address p:nth-child(3){
+    color: var(--champagne-gold);
+    font-weight: bold;
 }
 
 footer a{
     text-decoration: none;
     color: var(--champagne-gold);
     font-size: 1em;
+    font-weight: bold;
+    padding: .2em;
+}
+
+footer div{
+    background-color: var(--midnight-blue);
+    box-shadow: none;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 
 /* MEDIA QUERY (medium) */
@@ -288,6 +313,9 @@ footer a{
     }
     header img{
         width: 40vh;
+    }
+    nav{
+        font-size: 1.3em;
     }
     #offerings{
         display: grid;
@@ -418,5 +446,4 @@ footer a{
         grid-row: 4 / 5;
         grid-column: 1 / 6;
     }
-    
 }
