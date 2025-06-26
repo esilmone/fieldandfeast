@@ -100,7 +100,6 @@ h1{
 
 
 nav{
-    text-align: center;
     font-size: 1em;
     background-color: var(--champagne-gold);
     padding: .5em;
@@ -110,7 +109,6 @@ nav a{
     text-decoration: none;
     color: var(--midnight-blue);
     font-weight: bold;
-    justify-content: space-between;
 }
 
 nav a:hover{
@@ -118,7 +116,9 @@ nav a:hover{
 }
 
 nav ul{
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 nav li{
@@ -253,6 +253,8 @@ gallery h2{
 footer{
     background-color: var(--midnight-blue);
     text-align: center;
+    margin-top: 2em;
+    padding: 1em;
 }
 
 address{
@@ -266,8 +268,6 @@ footer a{
     font-size: 1em;
 }
 
-
-
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px){
     main{
@@ -277,10 +277,11 @@ footer a{
         align-items: center;
     }
     h1{
-        font-size: 4.5em;
+        font-size: 4em;
     }
     h2{
         font-size: 2em;
+        padding-left: .2em;
     }
     h3{
         font-size: 1.8em;
@@ -374,7 +375,7 @@ footer a{
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px){
     main{
-        width: 70vw;
+        width: 80vw;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -383,20 +384,20 @@ footer a{
         width: 30vh;
     }
     #about{
-        max-width: 70vw;
+        max-width: 80vw;
         margin: 0 auto;
     }
     #offerings{
-        max-width: 70vw;
-        height: 50vh;
+        max-width: 80vw;
     }
     #gallery{
-        max-width: 70vw;
+        max-width: 80vw;
         display: grid;
         justify-content: center;
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto;
         margin: 0 auto;
+        padding-left: .3em;
     }
     #gallery h2{
         grid-row: 1 / 2;
@@ -407,13 +408,13 @@ footer a{
         grid-column: 1 / 6;
     }
     #gallery img, .gallery-img{
-        max-width: 12vw;
+        max-width: 15vw;
     }
     .gallery-img{
         margin: 1em;
     }
     #gallery a{
-        max-width: 70vw;
+        max-width: 77vw;
         grid-row: 4 / 5;
         grid-column: 1 / 6;
     }
